@@ -1,0 +1,491 @@
+
+                
+                
+
+<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/><meta name="renderer" content="webkit"/><meta property="qc:admins" content="15317273575564615446375"/><meta property="og:image" content="https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/touch-icon.png"/><meta name="viewport"
+              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/><meta name="alexaVerifyID" content="LkzCRJ7rPEUwt6fVey2vhxiw1vQ"/><meta name="apple-itunes-app" content="app-id=958101793, app-argument="><title>SegmentFault</title><meta name="description" content="SegmentFault ( www.sf.gg ) 是中国领先的开发者技术社区。 我们希望为编程爱好者提供一个纯粹、高质的技术交流的平台， 与开发者一起学习、交流与成长，创造属于开发者的时代！"/><meta name="keywords" content="Hardway"/><link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="SegmentFault"/><link rel="shortcut icon" href="https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/favicon.ico"/><link rel="apple-touch-icon" href="https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/touch-icon.png"><meta name="msapplication-TileColor" content="#009a61"/><meta name="msapplication-square150x150logo" content="https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/touch-icon.png"/><meta name="userId" value="1030000002759200" id="SFUserId"/><meta name="userRank" value="202" id="SFUserRank"/><link rel="alternate" type="application/atom+xml" title="SegmentFault 最新问题" href="/feeds/questions"><link rel="alternate" type="application/atom+xml" title="SegmentFault 最新文章" href="/feeds/blogs"><link rel="stylesheet" href="https://sf-static.b0.upaiyun.com/v-57b589e4/global/css/global.css"/><link rel="stylesheet" href="https://sf-static.b0.upaiyun.com/v-57b589e4/user/css/user.css"/><link rel="stylesheet" href="https://sf-static.b0.upaiyun.com/v-57b589e4/global/css/responsive.css"/><!--[if lt IE 9]><link rel="stylesheet" href="https://sf-static.b0.upaiyun.com/v-57b589e4/global/css/ie.css"/><script src="https://sf-static.b0.upaiyun.com/v-57b589e4/global/script/html5shiv.js"></script><script src="https://sf-static.b0.upaiyun.com/v-57b589e4/global/script/respond.js"></script><![endif]--><script src="https://sf-static.b0.upaiyun.com/v-57b589e4/global/script/debug.js"></script></head><body data-mod="user"
+    class="user-index "><!--[if lt IE 9]><div class="alert alert-danger topframe" role="alert">你的浏览器实在<strong>太太太太太太旧了</strong>，放学别走，升级完浏览器再说 <a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div><![endif]--><img id="icon4weChat" style="height: 0;width: 0;" data-src="https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/touch-icon-512.png"><img id="icon4weChat" data-src="https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/touch-icon-512.png"><div class="global-nav sf-header"><nav class="container nav"><div class="hidden-sm hidden-lg hidden-md"><div class="sf-header__logo sf-header__logo--response"><h1><a></a></h1></div><div class="dropdown m-menu"><a href="javascript:void(0);" id="dLabel" class="visible-xs-block m-toptools"
+           data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-align-justify"></span><span class="mobile-menu__unreadpoint"></span></a><ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"><li class="mobile-menu__item"><a href="/questions/newest">问答</a></li><li class="mobile-menu__item"><a href="/blogs">文章</a></li><li class="mobile-menu__item"><a href="/user/note">笔记</a></li><li class="mobile-menu__item"><a href="/jobs">职位</a></li><li class="mobile-menu__item"><a href="/events">活动</a></li><li class="mobile-menu__item"><a href="/tags">标签</a></li><li class="mobile-menu__item"><a href="/users">榜单</a></li><li class="mobile-menu__item"><a href="/sites">子站</a></li><li role="presentation" class="divider"></li><li class="mobile-menu__item"><a href="/user/notifications">消息<span
+                                class="pull-right badge mt4"
+                                id="m-messageCount"></span></a></li><li role="presentation" class="divider"></li><li class="mobile-menu__item"><a href="/api/user/logout?_=dfa4e32bb6fe292c33f3289979d9812e">退出</a></li></ul></div><a href="/ask" class="visible-xs-block pull-right m-ask m-toptools"><span
+                        class="glyphicon glyphicon-pencil"></span></a></div><div class="row hidden-xs"><div class="col-sm-9 col-md-7 col-lg-6"><div class="sf-header__logo"><h1><a href="/">SegmentFault</a></h1></div><ul class="menu list-inline pull-left hidden-xs"><li class="menu__item"><a href="/questions">问答</a></li><li class="menu__item"><a href="/blogs">文章</a></li><li class="menu__item"><a href="/user/note">笔记</a></li><li class="menu__item"><a href="/jobs">职位</a></li><li class="menu__item"><a href="/events">活动</a></li></ul></div><div class="col-sm-3 col-md-5 col-lg-6 text-right"><form action="/search" class="header-search  hidden-sm hidden-xs mr20"><button class="btn btn-link"><span class="sr-only">搜索</span><span class="glyphicon glyphicon-search"></span></button><input id="searchBox" name="q" type="text" placeholder="输入关键字搜索" class="form-control"
+                                   value=""/></form><ul class="opts list-inline hidden-xs"><li class="opts__item dropdown hoverDropdown write-btns"><a class="dropdownBtn" data-toggle="dropdown" href="/ask">撰写<span
+                                                class="caret"></span></a><ul class="dropdown-menu dropdown-menu-right "><li
+                                                                                                ><a href="/ask">提问题</a></li><li
+                                                                                                ><a href="/write">写文章</a></li><li
+                                                                                                ><a href="/record">记笔记</a></li><li class="divider"></li><li><a href="/user/draft">草稿箱</a></li></ul></li><li class="opts__item message has-unread "><a id="dLabel" class="dropdown-toggle-message" href="/user/notifications"><span class="sr-only">消息</span><span id="messageCount" class="fa fa-bell-o"></span></a><div class="opts__item--message hide"><div class="panel panel-default"><div class="panel-heading"><ul class="nav nav-tabs nav-tabs-message"><li role="presentation" class="active"><a href="#messageGeneral" id="home-tab" role="tab" data-toggle="tab" aria-controls="home"
+                       aria-expanded="true"><i class="fa fa-bullhorn"></i><span class="notice-dot hide notice-dot-general"></span></a></li><li role="presentation" class=""><a href="#messageRanked" id="home-tab" role="tab" data-toggle="tab" aria-controls="home"
+                       aria-expanded="true"><i class="fa fa-thumbs-o-up"></i><span class="notice-dot hide notice-dot-ranked"></span></a></li><li role="presentation" class=""><a href="#messageFollowed" id="home-tab" role="tab" data-toggle="tab" aria-controls="home"
+                       aria-expanded="true"><i class="fa fa-user-plus"></i><span class="notice-dot hide notice-dot-followed"></span></a></li><li role="presentation" class=""><a href="#messageInbox" id="home-tab" role="tab" data-toggle="tab" aria-controls="home"
+                       aria-expanded="true"><i class="fa fa-commenting"></i><span class="notice-dot hide notice-dot-inbox"></span></a></li></ul></div><div class="panel-body"><div class="tab-content"><div role="tabpanel" class="tab-pane active" id="messageGeneral"></div><div role="tabpanel" class="tab-pane" id="messageRanked"></div><div role="tabpanel" class="tab-pane" id="messageFollowed"></div><div role="tabpanel" class="tab-pane" id="messageInbox"></div><script type="text/template" id="messageGeneralTpl"><ul class="mCustomScrollbar-message" data-proto="general"  data-mcs-theme="minimal-dark"><% _.each(general,function(d){ %><li class="<%= d.viewed>0 ?'':'bg-warning'%>"><%= d.sentence %>&nbsp;<a
+                                    href="<%= d.url %>"><%= d.excerpt %></a></li><% }) %></ul></script><script type="text/template" id="item--general"><% _.each(general,function(d){ %><li class="<%= d.viewed>0 ?'':'bg-warning'%>"><%= d.sentence %>&nbsp;<a
+                                    href="<%= d.url %>"><%= d.excerpt %></a></li><% }) %></script><script type="text/template" id="messageRankedTpl"><ul class="mCustomScrollbar-message" data-proto="ranked"  data-mcs-theme="minimal-dark"><% _.each(ranked,function(d){ %><li class="<%= d.viewed>0 ?'':'bg-warning'%>"><span class="badge
+                                                    <% if(d.voted && d.voted.rank!=0){ %><%= d.voted.rank > 0 ? 'green':'red' %><% } else { %> transparent <% } %>"><% if(d.voted){ %><%= d.voted.rank > 0 ? '+'+d.voted.rank:d.voted.rank %><% } %></span><div class="rank-desc"><%= d.sentence %>&nbsp;<a href="<%= d.url %>"><%=
+                                    d.excerpt %></a></div></li><% }) %></ul></script><script type="text/template" id="item--ranked"><% _.each(ranked,function(d){ %><li class="<%= d.viewed>0 ?'':'bg-warning'%>"><span class="badge
+                                                    <% if(d.voted && d.voted.rank!=0){ %><%= d.voted.rank > 0 ? 'green':'red' %><% } else { %> transparent <% } %>"><% if(d.voted){ %><%= d.voted.rank > 0 ? '+'+d.voted.rank:d.voted.rank %><% } %></span><div class="rank-desc"><%= d.sentence %>&nbsp;<a href="<%= d.url %>"><%=
+                                    d.excerpt %></a></div></li><% }) %></script><script type="text/template" id="messageFollowedTpl"><p class="follow-tips">他们最近关注了你</p><ul class="mCustomScrollbar-message" data-proto="followed"  data-mcs-theme="minimal-dark"><% _.each(followed,function(d){ %><li class="<%= d.viewed>0 ?'':'bg-warning'%>"><img class="follower__img avatar-32"
+                                 src="<%= d.triggerUser[0] ? d.triggerUser[0].avatarUrl : '' %>"><div class="follower__info"><% if(d.triggerUser[0] ? d.triggerUser[0].isFollowed : ''){ %><button data-id="<%= d.triggerUser[0] ? d.triggerUser[0].id : '' %>"
+                                        class="btn btn-default btn-xs message__btn--unfollow pull-right active">
+                                    已关注
+                                </button><% }else{ %><button data-id="<%= d.triggerUser[0] ? d.triggerUser[0].id : '' %>"
+                                        class="btn btn-default btn-xs message__btn--follow pull-right">
+                                    关注
+                                </button><% } %><a href="<%= d.triggerUser[0] ? d.triggerUser[0].url : '' %>"><%=d.triggerUser[0] ? d.triggerUser[0].name : ''%></a><br><span><%= d.triggerUser[0] ? d.triggerUser[0].rank : '' %> 声望</span></div></li><% }) %></ul></script><script type="text/template" id="item--followed"><% _.each(followed,function(d){ %><li class="<%= d.viewed>0 ?'':'bg-warning'%>"><img class="follower__img avatar-32"
+                                 src="<%= d.triggerUser[0] ? d.triggerUser[0].avatarUrl : '' %>"><div class="follower__info"><% if(d.triggerUser[0] && d.triggerUser[0].isFollowed){ %><button data-id="<%= d.triggerUser[0] ? d.triggerUser[0].id : '' %>"
+                                        class="btn btn-default btn-xs message__btn--unfollow pull-right active">
+                                    已关注
+                                </button><% }else{ %><button data-id="<%= d.triggerUser[0] ? d.triggerUser[0].id : '' %>"
+                                        class="btn btn-default btn-xs message__btn--follow pull-right">
+                                    关注
+                                </button><% } %><a href="<%= d.triggerUser[0] ? d.triggerUser[0].url : '' %>"><%= d.triggerUser[0].name
+                                    %></a><br><span><%= d.triggerUser[0].rank %> 声望</span></div></li><% }) %></script><script type="text/template" id="messageInboxTpl"><p class="follow-tips">他们给你发了私信</p><ul class="mCustomScrollbar-message" data-proto="inbox" data-mcs-theme="minimal-dark"><% _.each(inboxes,function(d){ %><li class="<%= d.viewed>0 ?'':'bg-warning'%>" data-click="<%= d.url %>"><img class="follower__img avatar-32"
+                                     src="<%= d.targetUser.avatarUrl %>"><div class="follower__info"><a href="<%= d.url %>"><%= d.targetUser.name
+                                        %></a><br><span class="ellipsis inline-block" style="width: 245px;"><%= d.lastMessage.content.content %></span></div></li><% }) %><% if(inboxes.length ==0){ %><p class="text-center">没有人给你发私信</p><% } %></ul></script><script type="text/template" id="item--inboxes"><% _.each(inboxes,function(d){ %><li class="<%= d.viewed>0 ?'':'bg-warning'%>" data-click="<%= d.url %>"><img class="follower__img avatar-32"
+                                     src="<%= d.targetUser.avatarUrl %>"><div class="follower__info"><a href="<%= d.targetUser.url %>"><%= d.targetUser.name
+                                        %></a><br><span class="ellipsis inline-block" style="width: 245px;"><%= d.content %></span></div></li><% }) %></script></div><p class="opts__item--message-loading follow-tips">loading</p></div><div class="panel-footer"><div class="row"><div class="col-sm-6"><a href="javascript:;" class="message-ingore-all hide"><span
+                                class="glyphicon glyphicon-ok-sign"></span>
+                        全部标记为已读</a></div><div class="col-sm-6"><a class="opts__item--message-view-all" href="/user/notifications">查看全部
+                        &raquo;</a></div></div></div></div></div></li><li class="opts__item user dropdown hoverDropdown"><a class="dropdownBtn user-avatar" data-toggle="dropdown"
+                                       style="background-image: url('https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/user-64.png')"
+                                       href="/u/yeyushengfan"></a><ul class="dropdown-menu dropdown-menu-right"><li><a href="/u/yeyushengfan">我的主页</a></li><li><a href="/u/yeyushengfan/about">我的档案</a></li><li><a href="/user/settings">账号设置</a></li><li><a href="/api/user/logout?_=dfa4e32bb6fe292c33f3289979d9812e">退出</a></li><li class="divider"></li><li><a href="https://board.segmentfault.com/">建议反馈</a></li><li><a class="js__action--complain" href="javascript:void(0);">用户申诉</a></li><script type="text/template" id="js__action--complain-tpl"><form class="complain__form" method="post" action="/api/appeals/add"><div class="form-group"><label>理由</label><textarea name="description" class="form-control"
+                                                              rows="3"></textarea></div></form></script></ul></li></ul></div></div></nav></div><div class="global-navTags"><div class="container"><nav class=" nav"><ul class="nav__list"><li class="nav__item"><a href="/"><i class="fa fa-home"></i>home
+                            </a></li><li class="nav__item"><a href="/timeline"><i class="fa fa-list-alt"></i>feed
+                            </a></li><li class="nav__item nav__item--split"><a><span class="split"></span></a></li><li class="nav__item tag-nav__item"><a
+                                                                                href="/t/php">php</a></li><li class="nav__item tag-nav__item"><a
+                                                                                href="/t/mysql">mysql</a></li><li class="nav__item tag-nav__item"><a
+                                                                                href="/t/javascript">javascript</a></li><li class="nav__item tag-nav__item"><a
+                                                                                href="/t/linux">linux</a></li><li class="nav__item tag-nav__item"><a
+                                                                                href="/t/ubuntu">ubuntu</a></li><li class="nav__item nav__item--more" data-open="0"><a class="nav__item--more-link"
+                                                                               href="javascript:void(0)"><div class="tag__more"><i class="tag__more--icon"></i><i class="tag__more--icon"></i><i class="tag__more--icon"></i></div></a></li></ul><div class="tag-mgr__box hide"><input class="tag-mgr__query" type="text" placeholder="搜索关注的标签"
+                               data-tags='[{"id":"1040000000089387","name":"php","url":"\/t\/php"},{"id":"1040000000089439","name":"mysql","url":"\/t\/mysql"},{"id":"1040000000089436","name":"javascript","url":"\/t\/javascript"},{"id":"1040000000089392","name":"linux","url":"\/t\/linux"},{"id":"1040000000090245","name":"ubuntu","url":"\/t\/ubuntu"}]'><div class="mCustomScrollbar" data-mcs-theme="minimal-dark"><ul class="tag-mgr__list"><li><a href="/t/php">php</a></li><li><a href="/t/mysql">mysql</a></li><li><a href="/t/javascript">javascript</a></li><li><a href="/t/linux">linux</a></li><li><a href="/t/ubuntu">ubuntu</a></li></ul></div><a href="/tags" class="btn btn-primary btn-sm tag-mgr__btn">标签管理</a></div></nav></div></div>    <style>
+        .profile__heading-edit {
+            display: none !important;
+        }
+    </style>
+<div class="profile"><header class="profile__heading"><div class="container"><div class="row" style="position: relative;"><div class="col-md-2"><div class="profile__heading--avatar-warp"><a href="/u/hardway"><img
+                                        class=" profile__heading--avatar"
+                                        src="https://sfault-avatar.b0.upaiyun.com/127/454/1274547005-1030000000171048_huge256"
+                                        alt="Hardway"/></a><input type="file" id="avatarFile" name="avatar" class="file hide"></div><div class="profile__heading--social"><ul class="sn-inline profile__heading--social-item"><li><a href="https://profiles.google.com/100019629712267970840" class="icon-sn-google"
+                                               target="_blank"></a></li></ul></div></div><div class="col-md-5"><h2 class="profile__heading--name">
+                            Hardway                                <small class="ml15"><a
+                                            href="/u/hardway/about">查看完整档案</a></small></h2><div class="profile__heading--award"><a class="profile__rank-btn" href="/u/hardway/rank"><span class="h4">123</span><span class="profile__rank-btn-text">声望</span></a><div class="profile__heading--award-badge"><span class="badge badge--o badge--sf badge--gold"><i
+                                                    class="badge__icon"></i></span><span class="profile__heading--award-badge-count">0</span><span class="badge badge--o badge--sf badge--silver"><i
+                                                    class="badge__icon"></i></span><span class="profile__heading--award-badge-count">0</span><span class="badge badge--o badge--sf badge--bronze"><i
+                                                    class="badge__icon"></i></span><span class="profile__heading--award-badge-count">3</span></div></div><div class="profile__heading--other"><script type="text/template" class="tpl__city--form"><form class="form form--profile form-inline form__city"
+                                      data-action="/api/user/homepage/city/edit"><div class="form-group"><input placeholder="现居城市       " name="city" data-city="<%- city %>"
+                                               class="input-sm tagsInput form-control mr10"><button type="button" class="btn btn-sm btn-primary js-submit">保存</button></div></form></script><script type="text/template" class="tpl__city--content"><%- city.name %><span class="profile__heading-edit btn btn-xs" data-type="city"><i class="fa fa-pencil"
+                                                                                        aria-hidden="true"></i>编辑</span></script><span class="profile__heading--other-item hide"><i class="fa fa-map-marker"></i><span class="profile__city">上海<span class="profile__heading-edit   btn btn-xs " data-type="city"><i
+                                                    class="fa fa-pencil "
+                                                    aria-hidden="true"></i>编辑</span></span></span><script type="text/template" class="tpl__school--form"><form class="form form--profile form-inline form__school"
+                                      data-action="/api/user/homepage/school/edit"><div class="form-group"><input placeholder="院校名称       " name="name"
+                                               class="input-sm tagsInput form-control mr10"
+                                               data-school="<%- school[0]%>"><input placeholder="所学专业" name="department"
+                                               class="input-sm tagsInput form-control mr10" value="<%- school[1]%>"><button type="button" class="btn btn-sm btn-primary js-submit">保存</button></div></form></script><script type="text/template" class="tpl__school--content"><%= school[0] %><span
+                                        class="profile__heading--other-item-fgx">&nbsp;&nbsp;|&nbsp;&nbsp;</span><%= school[1] %><span class="profile__heading-edit btn btn-xs" data-type="school"><i class="fa fa-pencil"
+                                                                                          aria-hidden="true"></i>编辑</span></script><span class="profile__heading--other-item hide"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span class="profile__school"><span
+                                                class="profile__heading--other-item-fgx hide">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="profile__heading-edit   btn btn-xs profile__heading-edit--init" data-type="school"><i
+                                                    class="fa fa-pencil hide"
+                                                    aria-hidden="true"></i>填写毕业院校</span></span></span><script type="text/template" class="tpl__company--form"><form class="form form--profile form-inline form__company"
+                                      data-action="/api/user/homepage/company/edit"><div class="form-group"><input placeholder="公司/组织名称" name="name"
+                                               class="tagsInput form-control mr10 input-sm" value="<%- company[0]%>"><input placeholder="职位头衔" name="role"
+                                               class="tagsInput form-control mr10 input-sm" value="<%- company[1]%>"><button type="button" class="btn btn-primary btn-sm js-submit">保存</button></div></form></script><script type="text/template" class="tpl__company--content"><%= company[0]%><span
+                                        class="profile__heading--other-item-fgx">&nbsp;&nbsp;|&nbsp;&nbsp;</span><%= company[1] %><span class="profile__heading-edit btn btn-xs" data-type="company"><i class="fa fa-pencil"
+                                                                                           aria-hidden="true"></i>编辑</span></script><span class="profile__heading--other-item hide"><i class="fa fa-briefcase" aria-hidden="true"></i><span class="profile__company"><span
+                                                class="profile__heading--other-item-fgx hide">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="profile__heading-edit   btn btn-xs profile__heading-edit--init" data-type="company"><i
+                                                    class="fa fa-pencil hide"
+                                                    aria-hidden="true"></i>填写所在公司/组织</span></span></span><script type="text/template" class="tpl__site--form"><form class="form form--profile form-inline form__site"
+                                      data-action="/api/user/homepage/site/edit"><div class="form-group"><input placeholder="个人网站" name="site"
+                                               onkeypress="stopSubmit(event)"
+                                               class="tagsInput form-control mr10 input-sm" value="<%- site %>"><button type="button" class="btn btn-sm btn-primary js-submit">保存</button></div></form></script><script>
+                                stopSubmit = function (e) {
+                                    if(e.keyCode == 13){
+                                        e.preventDefault();
+                                    }
+
+                                }</script><script type="text/template" class="tpl__site--content"><a
+                                        class="profile__heading--other-item-link" target="_blank" href="http://<%- site %>"
+                                        target="_blank"><%- site %></a><span class="profile__heading-edit btn btn-xs" data-type="site"><i class="fa fa-pencil"
+                                                                                        aria-hidden="true"></i>编辑</span></script><span class="profile__heading--other-item "><i class="fa fa-link"></i><span class="profile__site"><a
+                                                class="profile__heading--other-item-link" target="_blank"
+                                                href="http://www.sign4x.com"
+                                                target="_blank">www.sign4x.com</a><span class="profile__heading-edit  btn btn-xs " data-type="site"><i
+                                            class="fa fa-pencil "
+                                            aria-hidden="true"></i>编辑</span></span></span></div></div><div class="col-md-5"></div><div class="profile__heading--desc"><div class="profile__heading--desc-heading"><span class="profile__heading--desc-heading-dot-warp"><span class="profile__heading-dot profile__heading-dot--red"></span><span class="profile__heading-dot profile__heading-dot--yellow"></span><span class="profile__heading-dot profile__heading-dot--green"></span></span><div class="pull-right"><span data-type="desc" class="profile__heading-edit   btn btn-xs profile__heading--desc-heading-edit"><i
+                                            class="fa fa-pencil"
+                                            aria-hidden="true"></i>编辑</span></div></div><div class="profile__heading--desc-body"><script type="text/template" class="tpl__desc--form"><form class="form form--profile form__desc"
+                                      data-action="/api/user/homepage/description/edit"><div class="form-group"><textarea class="form-control" name="description" rows="4"><%= description %></textarea></div><div class="text-right"><button type="button" class="btn btn-default js-cancel mr10">取消</button><button type="button" class="btn btn-primary js-submit">保存</button></div></form></script><script type="text/template" class="tpl__desc--content"><% if(parsedText){ %><%= parsedText %><% }else{ %><div style="white-space: pre"> _
+| |__ _ _ __ _
+| '_ \| | | |/ _` |
+| |_) | |_| | (_| |
+|_.__/ \__,_|\__, |
+             |___/ 该用户太懒什么也没留下
+                                    </div><% } %></script><div class="profile__desc"><p>招聘 Fullstack Developer (上海)<br><a href="https://segmentfault.com/o/sign4x">https://segmentfault.com/o/si...</a></p></div></div></div></div></div></header><div class="wrap mt30"><div class="container"><div class="row"><div class="col-md-2"><div class="mb15 "><a class="btn mr10 btn-success userfollow"
+                                                                                                                   data-id="1030000000171048">
+                                    加关注
+                                </a><a class="btn btn-default" href="javascript:void(0);" id="courier"
+                                   data-username="Hardway" data-userid="1030000000171048">发私信</a></div><div class="profile__heading-info row"><div class="col-md-6 col-xs-12" style="border-right: 1px solid #eee;"><a href="/u/hardway/users/following"><span>关注了</span><span class="h5">1728 人</span></a></div><div class="col-md-6 col-xs-12"><a href="/u/hardway/users/followed"><span>粉丝</span><span class="h5">113 人</span></a></div></div><ul class="nav nav-pills nav-stacked profile__nav"><li role="separator" class="divider"><a></a></li><li><a
+                                        href="/u/hardway/answers"><span>他的回答
+                                        </span><span
+                                            class="count"> 12</span></a></li><li><a
+                                        href="/u/hardway/questions"><span>他的提问
+                                        </span><span
+                                            class="count"> 1</span></a></li><li><a
+                                        href="/u/hardway/articles"><span>他的文章
+                                        </span><span
+                                            class="count"></span></a></li><li><a
+                                        href="/u/hardway/notes"><span>他的笔记
+                                        </span><span
+                                            class="count"></span></a></li><li><a
+                                            href="/u/hardway/bookmarks"><span>他的收藏夹
+                                            </span><span
+                                                class="count"></span></a></li><li role="separator" class="divider"><a></a></li><li><a
+                                        href="/u/hardway/tags"><span>标签得分</span></a></li><li><a
+                                        href="/u/hardway/badges"><span>获得徽章</span><span
+                                            class="count"> 3</span></a></li><li><a
+                                        href="/u/hardway/rank"><span>声望记录</span></a></li></ul></div><script>
+                        var profileHeading = {
+                            description:"\u62db\u8058 Fullstack Developer (\u4e0a\u6d77)\r\nhttps:\/\/segmentfault.com\/o\/sign4x",
+                            parsedText:"<p>\u62db\u8058 Fullstack Developer (\u4e0a\u6d77)<br><a href=\"https:\/\/segmentfault.com\/o\/sign4x\">https:\/\/segmentfault.com\/o\/si...<\/a><\/p>",
+                            site:"www.sign4x.com",
+                            city: {
+                                id:"310100",
+                                name:"\u4e0a\u6d77"
+                            },
+                            company:[],
+                            school:[],
+                        };
+                    </script><div class="col-md-10 profile-following"><ul class="nav nav-tabs"><li  ><a href="/u/hardway/questions/following">关注的问题</a></li><li  ><a href="/u/hardway/tags/following">关注的标签</a></li><li  class="active"  ><a href="/u/hardway/users/following">关注的人</a></li><li  ><a href="/u/hardway/blogs/following">关注的专栏</a></li><li  ><a href="/u/hardway/bookmarks/following">关注的收藏夹</a></li></ul><ul class="list-unstyled profile-following__list profile-following__users"><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sfault-avatar.b0.upaiyun.com/944/518/94451869-55aca1d44eb34_big64"><div><a  href="/u/constantince">亲爱的巴依老爷</a><div class="profile-following--followed">3声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">2 关注</span><button type="button" data-id="1030000003004391"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sfault-avatar.b0.upaiyun.com/180/991/1809918647-561f7149a462b_big64"><div><a  href="/u/daisyinsummer">DaisyInSummer</a><div class="profile-following--followed">145声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">2 关注</span><button type="button" data-id="1030000003857325"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/user-64.png"><div><a  href="/u/winoros">winoros</a><div class="profile-following--followed">1声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">1 关注</span><button type="button" data-id="1030000002589131"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/user-64.png"><div><a  href="/u/husan">husan</a><div class="profile-following--followed">2声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">1 关注</span><button type="button" data-id="1030000003905172"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sfault-avatar.b0.upaiyun.com/114/937/1149378377-55eaf5ab30978_big64"><div><a  href="/u/kathy_miao">Kathy_Miao</a><div class="profile-following--followed">472声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">4 关注</span><button type="button" data-id="1030000003487515"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sfault-avatar.b0.upaiyun.com/491/730/491730896-56dee0a66bf17_big64"><div><a  href="/u/phuud">phuud</a><div class="profile-following--followed">73声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">1 关注</span><button type="button" data-id="1030000004559255"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/user-64.png"><div><a  href="/u/phoeshow">phoeshow</a><div class="profile-following--followed">2声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">1 关注</span><button type="button" data-id="1030000004566405"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sfault-avatar.b0.upaiyun.com/183/801/1838017360-575b70057fd10_big64"><div><a  href="/u/caiyongmin">caiyongmin</a><div class="profile-following--followed">51声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">1 关注</span><button type="button" data-id="1030000002608378"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sfault-avatar.b0.upaiyun.com/146/634/1466348899-5482b09a96bf7_big64"><div><a  href="/u/moozee">木子muzi</a><div class="profile-following--followed">12声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">1 关注</span><button type="button" data-id="1030000000747582"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sfault-avatar.b0.upaiyun.com/388/075/388075681-55b1d5c40c5bd_big64"><div><a  href="/u/hsldymq">hsldymq</a><div class="profile-following--followed">219声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">1 关注</span><button type="button" data-id="1030000003015436"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/user-64.png"><div><a  href="/u/____yu________">____Yu________</a><div class="profile-following--followed">3声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">1 关注</span><button type="button" data-id="1030000003035526"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/user-64.png"><div><a  href="/u/alangluo">alangluo</a><div class="profile-following--followed">-1声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">1 关注</span><button type="button" data-id="1030000004569436"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/user-64.png"><div><a  href="/u/xiange">shanyue</a><div class="profile-following--followed">1028声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">7 关注</span><button type="button" data-id="1030000002561325"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/user-64.png"><div><a  href="/u/zhudale">zhudale</a><div class="profile-following--followed">3声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">1 关注</span><button type="button" data-id="1030000004570292"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sfault-avatar.b0.upaiyun.com/269/630/269630261-5799d182df7c7_big64"><div><a  href="/u/paopao">泡泡</a><div class="profile-following--followed">1174声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">16 关注</span><button type="button" data-id="1030000000399513"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/user-64.png"><div><a  href="/u/helpyou">helpyou</a><div class="profile-following--followed">-1声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">1 关注</span><button type="button" data-id="1030000002479960"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sf-static.b0.upaiyun.com/v-57b589e4/global/img/user-64.png"><div><a  href="/u/gaobie">邂逅告别</a><div class="profile-following--followed">1声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">1 关注</span><button type="button" data-id="1030000004565325"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sfault-avatar.b0.upaiyun.com/147/825/1478255147-57158f6dca959_big64"><div><a  href="/u/jovey">Jovey</a><div class="profile-following--followed">483声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">1 关注</span><button type="button" data-id="1030000001608233"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sfault-avatar.b0.upaiyun.com/346/472/3464725059-1030000000463607_big64"><div><a  href="/u/jingzhongyue_hhh">井中月_hhh</a><div class="profile-following--followed">24声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">1 关注</span><button type="button" data-id="1030000000463607"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li><li><div class="row"><div class="col-md-10"><img class="avatar-32" src="https://sfault-avatar.b0.upaiyun.com/305/556/3055562437-570face8890d3_big64"><div><a  href="/u/majormayer">majormayer</a><div class="profile-following--followed">492声望</div></div></div><div class="col-md-2 text-right"><span class="profile-following--followed">1 关注</span><button type="button" data-id="1030000004435056"
+                                                                            class="ml10 btn btn-default btn-xs userfollow">关注
+                                                                    </button></div></div></li></ul><div class="text-center"><ul class="pagination"><li class="active"><a href="javascript:void(0);">1</a></li><li><a href="?page=2">2</a></li><li><a href="?page=3">3</a></li><li><a href="?page=4">4</a></li><li><a href="?page=5">5</a></li><li class="disabled"><span>&hellip;</span></li><li class="next"><a rel="next" href="?page=2">下一页</a></li></ul></div></div></div></div></div></div>    <div class="modal widget-911" id="911" tabindex='-1'>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal" type="button">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title"><span data-model="action"></span><span data-model="type"></span></h4>
+      </div>
+      <div class="modal-body">
+        <form id="reportForm">
+          <!-- 后台返回信息 -->
+          <p class="alert alert-warning" data-model="returnMsg"></p>
+          <div data-role="base">
+            <p>
+              <strong class="required">我要<span data-model="action"></span>该<span data-model="type"></span>，理由是：</strong>
+            </p>
+            <ul class="list-unstyled" data-model="list"></ul>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default pull-left" type="button" data-role="back" style="display:none">返回重选</button>
+                <button class="btn btn-default" data-dismiss="modal" type="button">取消</button>
+        <button class="btn btn-primary" data-role="submit" type="button">提交</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    
+
+<footer id="footer">
+    <div class="container">
+        <div class="row hidden-xs">
+            <dl class="col-sm-2 site-link">
+                <dt>网站相关</dt>
+                <dd><a href="/about">关于我们</a></dd>
+                <dd><a href="/tos">服务条款</a></dd>
+                <dd><a href="/faq">帮助中心</a></dd>
+                <dd><a href="/repu">声望与权限</a></dd>
+                <dd><a href="/markdown">编辑器语法</a></dd>
+                <dd><a href="//weekly.segmentfault.com/">每周精选</a></dd>
+                <dd><a href="/app">App 下载</a></dd>
+            </dl>
+            <dl class="col-sm-2 site-link">
+                <dt>联系合作</dt>
+                <dd><a href="/contact">联系我们</a></dd>
+                <dd><a href="/hiring">加入我们</a></dd>
+                <dd><a href="/link">合作伙伴</a></dd>
+                <dd><a href="/press">媒体报道</a></dd>
+                <dd><a href="https://board.segmentfault.com/">建议反馈</a></dd>
+                            </dl>
+            <dl class="col-sm-2 site-link">
+                <dt>常用链接</dt>
+                                                <dd><a href="//chrome.google.com/webstore/detail/segmentfault-%E7%AC%94%E8%AE%B0/pjklfdmleagfaekibdccmhlhellefcfo" target="_blank">笔记插件: Chrome</a></dd>
+                                                                <dd><a href="//addons.mozilla.org/zh-CN/firefox/addon/sf-note-ext/" target="_blank">笔记插件: Firefox</a></dd>
+                                                                <dd>订阅：<a href="/feeds">问答</a> / <a href="/feeds/blogs">文章</a></dd>
+                                                                <dd><a href="//mirrors.segmentfault.com/" target="_blank">文档镜像</a></dd>
+                                                                <dd><a href="//segmentfault.com/blog/interview" target="_blank">社区访谈</a></dd>
+                                                                <dd><a href="//segmentfault.com/d-day" target="_blank">D-DAY 技术沙龙</a></dd>
+                                                                <dd><a href="//segmentfault.com/hackathon" target="_blank">黑客马拉松 Hackathon</a></dd>
+                                                                <dd><a href="//namebeta.com/" target="_blank">域名搜索注册</a></dd>
+                                            </dl>
+            <dl class="col-sm-2 site-link">
+                <dt>关注我们</dt>
+                                <dd><a href="//github.com/SegmentFault" target="_blank">Github</a></dd>
+                                <dd><a href="//twitter.com/segment_fault" target="_blank">Twitter</a></dd>
+                                <dd><a href="http://weibo.com/segmentfault" target="_blank">新浪微博</a></dd>
+                                <dd><a href="//segmentfault.com/blog/segmentfault_team" target="_blank">团队日志</a></dd>
+                                <dd><a href="//segmentfault.com/blog/segmentfault" target="_blank">产品技术日志</a></dd>
+                                <dd><a href="//segmentfault.com/blog/community_admin" target="_blank">社区运营日志</a></dd>
+                                <dd><a href="//segmentfault.com/blog/segmentfault_news" target="_blank">市场运营日志</a></dd>
+                            </dl>
+            <dl class="col-sm-4 site-link" id="license">
+                <dt>内容许可</dt>
+                <dd>除特别说明外，用户内容均采用 <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/cn/">知识共享署名-相同方式共享 3.0 中国大陆许可协议</a> 进行许可
+                </dd>
+                <dd>本站由 <a target="_blank" href="https://www.upyun.com/?utm_source=segmentfault&utm_medium=link&utm_campaign=upyun&md=segmentfault">又拍云</a> 提供 CDN 存储服务
+                </dd>
+            </dl>
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2011-2016 SegmentFault. 当前呈现版本 16.08.11<br>
+            <a href="http://www.miibeian.gov.cn/" rel="nofollow">浙ICP备 15005796号-2</a> &nbsp;
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602002000" rel="nofollow">浙公网安备 33010602002000号</a>
+        </div>
+        <p class="text-center">
+            <a class="js__view--selector hidden-sm hidden-md hidden-lg" data-action="mobile" href="javascript:;">移动版</a>
+            <a class="js__view--selector hidden-sm hidden-md hidden-lg" data-action="desktop" href="javascript:;">桌面版</a>
+        </p>
+    </div>
+</footer>
+
+<div id="fixedTools" class="hidden-xs hidden-sm">
+    <a id="backtop" class="hidden border-bottom" href="#">回顶部</a>
+
+    <div class="qrcodeWraper">
+        <a href="/app#qrcode"><span class="glyphicon glyphicon-qrcode"></span></a>
+        <img id="qrcode" class="border" alt="sf-wechat" src="https://sf-static.b0.upaiyun.com/v-57b589e4/page/img/app/appQrcode.png">
+
+        <p class="qrcode-text">扫扫下载 App</p>
+    </div>
+</div>
+
+<div class="app-promotion-bar">
+    <a href="javascript:;"><i class="fa fa-close close"></i></a>
+    <div class="icon"></div>
+    <h5 class="title h5">SegmentFault</h5>
+    <p class="describe">一起探索更多未知</p>
+    <a class="download-btn btn btn-sm btn-primary" href="/app#qrcode">下载 App</a>
+</div>
+
+<script id="loginModal" type="text/template">
+<div class="row bg-white login-modal">
+    <div class="col-md-4 col-sm-12 col-md-push-7 login-wrap">
+        <h1 class="h4 text-muted login-title">用户登录</h1>
+        <form action="/api/user/login" method="POST" role="form" class="mt30">
+            <div class="form-group">
+                <label class="control-label">Email</label>
+                <input type="email" class="form-control" name="mail" required placeholder="hello@segmentfault.com">
+            </div>
+            <div class="form-group">
+                <label class="control-label">密码</label>
+                <input type="password" class="form-control" name="password" required placeholder="密码">
+            </div>
+            <div class="form-group clearfix">
+                <div class="checkbox pull-left">
+                    <label><input name="remember" type="checkbox" value="1" checked> 记住登录状态</label>
+                </div>
+                <button type="submit" class="btn btn-primary pull-right pl20 pr20" onclick='ga("send", "event", "email login button", "clicked", "login modal");'>登录</button>
+            </div>
+        </form>
+        <p class="h4 text-muted visible-xs-block h4">快速登录</p>
+        <div class="widget-login mt30">
+            <p class="text-muted mt5 mr10 pull-left hidden-xs">快速登录</p>
+            <a href="/user/oauth/google" class="btn btn-default btn-sm btn-sn-google" onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "google"});'><span class="icon-sn-bg-google"></span> <strong class="visible-xs-inline">Google 账号</strong></a>
+            <a href="/user/oauth/github" class="btn btn-default btn-sm btn-sn-github" onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "github"});");'><span class="icon-sn-bg-github"></span> <strong class="visible-xs-inline">Github 账号</strong></a>
+            <a href="/user/oauth/weibo" class="btn btn-default btn-sm btn-sn-weibo" onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "weibo"});'><span class="icon-sn-bg-weibo"></span> <strong class="visible-xs-inline">新浪微博账号</strong></a>
+            <a href="/user/oauth/qq" class="btn btn-default btn-sm btn-sn-qq" onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "qq"});'><span class="icon-sn-bg-qq"></span> <strong class="visible-xs-inline">QQ 账号</strong></a>
+            <a href="/user/oauth/weixin" class="btn btn-default btn-sm btn-sn-weixin" onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "qq"});'><span class="icon-sn-bg-weixin"></span> <strong class="visible-xs-inline">微信账号</strong></a>
+            <button id="loginShowMore" href="javascript:void(0);" class="btn mb5 btn-default btn-sm btn-sn-dotted"><span class="icon-sn-bg-dotted"></span><strong class="visible-xs-inline">•••</strong></button>
+            <a href="/user/oauth/twitter" class="btn btn-default btn-sn-twitter btn-sm hidden" onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "twitter"});'><span class="icon-sn-bg-twitter"></span> <strong class="visible-xs-inline">Twitter 账号</strong></a>
+            <a href="/user/oauth/facebook" class="btn btn-default btn-sn-facebook btn-sm hidden" onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "facebook"});'><span class="icon-sn-bg-facebook"></span> <strong class="visible-xs-inline">Facebook 账号</strong></a>
+            <a href="/user/oauth/douban" class="btn btn-default btn-sn-douban btn-sm hidden" onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "douban"});'><span class="icon-sn-bg-douban"></span> <strong class="visible-xs-inline">豆瓣账号</strong></a>
+        </div>
+    </div>
+    <div class="login-vline hidden-xs hidden-sm"></div>
+    <div class="col-md-4 col-md-pull-3 col-sm-12 login-wrap">
+        <h1 class="h4 text-muted login-title">创建新账号</h1>
+        <form action="/api/user/register" method="POST" role="form" class="mt30">
+            <div class="form-group">
+                <label for="name" class="control-label">用户名</label>
+                <input type="text" class="form-control" name="name" required placeholder="字母、数字等，用户名唯一">
+            </div>
+            <div class="form-group">
+                <label for="mail" class="control-label">Email</label>
+                <input type="hidden" style="display:none" name="mail">
+                <input type="email" autocomplete="off" class="form-control register-mail" name="mail" required placeholder="hello@segmentfault.com">
+            </div>
+            <div class="form-group">
+                <label for="password" class="control-label">密码</label>
+                <input type="password" class="form-control" name="password" required placeholder="不少于 6 位">
+            </div>
+            <div class="form-group" style="display:none;">
+                <label class="required control-label">验证码</label>
+                <input type="text" class="form-control" id="captcha" name="captcha" placeholder="请输入下方的验证码">
+                <div class="mt10"><a id="loginReloadCaptcha"  href="javascript:void(0)"><img data-src="/user/captcha?w=240&h=50" class="captcha" width="240" height="50" /></a></div>
+            </div>
+            <div class="form-group clearfix">
+                <div class="checkbox pull-left">
+                    同意并接受<a href="/tos" target="_blank">《服务条款》</a>
+                </div>
+                <button type="submit" class="btn btn-primary pl20 pr20 pull-right" onclick='ga("send", "event", "email register button", "clicked", "login modal");'>注册</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="text-center text-muted mt30">
+    <a href="/user/forgot" class="ml5">找回密码</a>
+</div>
+</script>
+
+
+
+<script>
+    (function (w) {
+        w.SF = {
+            staticUrl: "https://sf-static.b0.upaiyun.com/v-57b589e4"
+        };
+        w.SF.token = (function () {
+    var _HP01A = 'd'//'ZvH'
++'fa4'//'m'
++//'H8J'
+'e'+/* 'vix'//'vix' */''+'3'//'eHn'
++'2'//'A'
++/* 'IqH'//'IqH' */''+'bb'//'p'
++'6'//'VDN'
++//'3'
+'fe'+'2'//'94a'
++'J'//'J'
++'9'//'O3N'
++'2c'//'x2n'
++//'ZUs'
+'33'+'f3'//'n'
++'C'//'C'
++'289'//'Gjs'
++//'5'
+'979'+'d98'//'tRe'
++'1'//'ugd'
++'2e'//'z'
+, _yJePyr = [[13,14],[20,21]];
+
+    for (var i = 0; i < _yJePyr.length; i ++) {
+        _HP01A = _HP01A.substring(0, _yJePyr[i][0]) + _HP01A.substring(_yJePyr[i][1]);
+    }
+
+    return _HP01A;
+})();;
+    })(window);
+
+                var lock = {
+        type: "",
+        text: '',
+        table: {"ban_post":[1,"\u4f60\u5df2\u7ecf\u88ab\u7981\u8a00, \u65e0\u6cd5\u8fdb\u884c\u6b64\u64cd\u4f5c, \u5982\u6709\u7591\u4e49\u8bf7\u63d0\u4ea4\u7533\u8bc9, \u6216\u8005\u53d1\u90ae\u4ef6\u5230pr@segmentfault.com"]}
+    };
+</script>
+
+    <script crossorigin src="https://sf-static.b0.upaiyun.com/v-57b589e4/3rd/assets.js"></script>
+    <script crossorigin src="https://sf-static.b0.upaiyun.com/v-57b589e4/user/script/index.min.js"></script>
+
+<script async src="//sponsor.segmentfault.com/asyncjs.php"></script>
+
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-918487-8']);
+    _gaq.push(['_trackPageview']);
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            
+        
+
+                        
+
+    ga('create', 'UA-918487-8', 'auto', {
+        'userID'
+    : 1030000002759200,
+        'createdTime'
+    : 1431401344,
+        'now'
+    : 1471599650 });
+    ga('set', 'dimension1', 'active_registed_visitor');
+    ga('send', 'pageview');
+
+</script>
+
+<script type='text/javascript'>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function() {
+        _vds.push(['setAccountId', '5411b7ab1ae040ed9a4eb4a120a06ead']);
+        (function() {
+            var vds = document.createElement('script');
+            vds.type = 'text/javascript';
+            vds.async = true;
+            vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+</script>
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?e23800c454aa573c0ccb16b52665ac26";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+</body>
+</html>

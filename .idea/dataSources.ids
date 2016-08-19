@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - spider@localhost" uuid="ed24dc55-cdfa-44fe-93d0-fe8097acaa6f">
+    <database-info product="MySQL" version="5.6.31" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="spider"/>
+      <table id="2" parent="1" name="users"/>
+      <column id="3" parent="2" name="user_id">
+        <comment>用户唯一标识</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="4" parent="2" name="nickname">
+        <comment>用户昵称,唯一</comment>
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="5" parent="2" name="rank">
+        <comment>声望</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="6" parent="2" name="sex">
+        <comment>性别:0 未知,1 男,2 女</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="7" parent="2" name="city">
+        <comment>城市</comment>
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="8" parent="2" name="school">
+        <comment>毕业学校</comment>
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="9" parent="2" name="carrer">
+        <comment>职业</comment>
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="10" parent="2" name="company">
+        <comment>公司</comment>
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="11" parent="2" name="website">
+        <comment>个人网站</comment>
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="12" parent="2" name="summary">
+        <comment>个人简介</comment>
+        <data-type>varchar(250)</data-type>
+      </column>
+      <column id="13" parent="2" name="followed">
+        <comment>粉丝</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="14" parent="2" name="following">
+        <comment>关注</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="15" parent="2" name="checked">
+        <comment>是否爬过</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="16" parent="2" name="nickname">
+        <columns>nickname</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="17" parent="2" name="nickname">
+        <columns>nickname</columns>
+        <underlying-index>nickname</underlying-index>
+      </key>
+      <key id="18" parent="2" name="PRIMARY">
+        <columns>user_id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
