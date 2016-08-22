@@ -39,22 +39,28 @@ while(true) {
 		$db->exec("UPDATE users SET rank={$data["rank"]}, city='{$data["city"]}', school='{$data["school"]}', checked=1 WHERE nickname='{$nickname}'");
 
 		//todo 获取用户粉丝
-		$url = "https://segmentfault.com/u/{$nickname}/users/followed";
+		for ($i = 1; ; $i++) {
+			$url = "https://segmentfault.com/u/{$nickname}/users/followed?page={$i}";
 
-		$content = @file_get_contents($url);
-		if (!$content) continue;
-		preg_match_all("#([a-zA-Z0-9]*)\\\">[\\x{4e00}-\\x{9fa5}_a-zA-Z0-9]*</a><div class=\"profile-following--followed\">#u", $content, $out);
-		foreach ($out[1] as $v) {
-			$db->exec("INSERT INTO users(nickname,checked) VALUE('$v',0) ON DUPLICATE KEY UPDATE nickname=VALUES(nickname)");
+			$content = @file_get_contents($url);
+			if (!$content) continue;
+			preg_match_all("#([a-zA-Z0-9]*)\\\">[\\x{4e00}-\\x{9fa5}_a-zA-Z0-9]*</a><div class=\"profile-following--followed\">#u", $content, $out);
+			if (count($out[1]) == 0) break;
+			foreach ($out[1] as $v) {
+				$db->exec("INSERT INTO users(nickname,checked) VALUE('$v',0) ON DUPLICATE KEY UPDATE nickname=VALUES(nickname)");
+			}
 		}
 
-		//todo 获取用户关注的人
-		$url = "https://segmentfault.com/u/{$nickname}/users/following";
+		for ($i = 1; ; $i++) {
+			//todo 获取用户关注的人
+			$url = "https://segmentfault.com/u/{$nickname}/users/following?page={$i}";
 
-		$content = @file_get_contents($url);
-		preg_match_all("#([a-zA-Z0-9]*)\\\">[\\x{4e00}-\\x{9fa5}_a-zA-Z0-9]*</a><div class=\"profile-following--followed\">#u", $content, $out);
-		foreach ($out[1] as $v) {
-			$db->exec("INSERT INTO users(nickname,checked) VALUE('$v',0) ON DUPLICATE KEY UPDATE nickname=VALUES(nickname)");
+			$content = @file_get_contents($url);
+			preg_match_all("#([a-zA-Z0-9]*)\\\">[\\x{4e00}-\\x{9fa5}_a-zA-Z0-9]*</a><div class=\"profile-following--followed\">#u", $content, $out);
+			if (count($out[1]) == 0) break;
+			foreach ($out[1] as $v) {
+				$db->exec("INSERT INTO users(nickname,checked) VALUE('$v',0) ON DUPLICATE KEY UPDATE nickname=VALUES(nickname)");
+			}
 		}
 	}
 }
