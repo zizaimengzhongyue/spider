@@ -18,7 +18,11 @@ while(true) {
 		//todo 获取用户信息
 		$url = "https://segmentfault.com/u/{$nickname}";
 
-		$content = file_get_contents($url);
+		$content = @file_get_contents($url);
+		if (!$content) {
+			$db->exec("UPDATE users SET checked=1 WHERE nickname='{$nickname}'");
+			continue;
+		}
 
 		$data             = [];
 		$data["nickname"] = $nickname;
@@ -37,7 +41,8 @@ while(true) {
 		//todo 获取用户粉丝
 		$url = "https://segmentfault.com/u/{$nickname}/users/followed";
 
-		$content = file_get_contents($url);
+		$content = @file_get_contents($url);
+		if (!$content) continue;
 		preg_match_all("#([a-zA-Z0-9]*)\\\">[\\x{4e00}-\\x{9fa5}_a-zA-Z0-9]*</a><div class=\"profile-following--followed\">#u", $content, $out);
 		foreach ($out[1] as $v) {
 			$db->exec("INSERT INTO users(nickname,checked) VALUE('$v',0) ON DUPLICATE KEY UPDATE nickname=VALUES(nickname)");
@@ -45,8 +50,8 @@ while(true) {
 
 		//todo 获取用户关注的人
 		$url = "https://segmentfault.com/u/{$nickname}/users/following";
-		
-		$content = file_get_contents($url);
+
+		$content = @file_get_contents($url);
 		preg_match_all("#([a-zA-Z0-9]*)\\\">[\\x{4e00}-\\x{9fa5}_a-zA-Z0-9]*</a><div class=\"profile-following--followed\">#u", $content, $out);
 		foreach ($out[1] as $v) {
 			$db->exec("INSERT INTO users(nickname,checked) VALUE('$v',0) ON DUPLICATE KEY UPDATE nickname=VALUES(nickname)");
